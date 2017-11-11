@@ -1,15 +1,23 @@
 $base-font-family: unquote('sans-serif');
-$background-color: #fff;
-$font-family: 'Roboto', sans-serif;
+$background-color: #fafafa;
+
 $theme-color1: #ff543f;
 $theme-color2: #5d6e7f;
 $theme-color3: #fff;
 $disabled-color: #ccc;
-$line-height: 1.5em;
-$font-size: 16px;
+
+$body-font-family: 'Dosis', sans-serif;
+$header-font-family: 'Pragati Narrow', sans-serif;
+
+$body-font-size: 16px;
+$header-font-size: 22px;
+
 $font-color: rgba(0, 0, 0, .9);
 $font-color-fallback: #000;
-$font-weight: 300;
+
+$body-font-weight: 400;
+$header-font-weight: 700;
+
 $max-width: 78em;
 
 @mixin breakpoint($point: desktop) {
