@@ -18,7 +18,7 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
   background-color: #f1f6f9;
   background: linear-gradient(-227deg, #fff 20%, #f1f6f9 59%, #c8ff3a 0%);
-  background: -moz-linear-gradient(-227deg, #fff 20%, #f1f6f9 59%, #c8ff3a 0%);
+  background: -moz-linear-gradient(-227deg, #fff 20%, #f1f6f9 60%, #c8ff3a 60%, #a4e400);
   overflow: hidden; }
 
 h1, h2, h3, h4 {
