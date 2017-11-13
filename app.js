@@ -1,9 +1,7 @@
 'use strict';
 
 const express = require('express');
-
 var app = express();
-
 var folder = process.argv[2] || 'src';
 
 if (folder === 'src') {

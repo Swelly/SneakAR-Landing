@@ -2,6 +2,7 @@
 
 import gulp from 'gulp';
 import requireDir from 'require-dir';
+import deploy from 'gulp-gh-pages';
 
 global.paths = {
     // HTML source files
@@ -23,3 +24,8 @@ global.paths = {
 requireDir('./gulp', { recurse: false });
 
 gulp.task('default', ['build']);
+
+gulp.task('deploy', function() {
+    return gulp.src("./src/**/*")
+        .pipe(deploy())
+});
