@@ -17,8 +17,10 @@ textarea {
     font-size: $body-font-size;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #8BC6EC;
-    background: -webkit-gradient( linear, left top, left bottom, color-stop( 50%, #FAFAFA ), color-stop( 50%, #FF0 ), color-stop( 50%, #FE0000 ) );
+    background-color: #f1f6f9;
+    background: linear-gradient(-227deg, #fff 20%, #f1f6f9 59%, #c8ff3a 0%);
+    background: -webkit-linear-gradient(-227deg, #fff 20%, #f1f6f9 59%, #c8ff3a 0%);
+    background: -moz-linear-gradient(-227deg, #fff 20%, #f1f6f9 59%, #c8ff3a 0%);
     overflow: hidden;
 
 }
@@ -26,40 +28,41 @@ textarea {
 h1, h2, h3, h4 {color: #000;}
 
 #app {
-    perspective: 1000px;
-    transform-style: preserve-3d;
     display: flex;
     height: 100vh;
     width: 100%;
     text-align: center;
+    perspective: 1000px;
+    transform-style: preserve-3d;
 
     .intro-block {
-        pointer-events: none;
-        transform: translateZ(0);
-        padding: 30px;
-        background: white;
-        border-radius: 5px;
-        width: 400px;
-        height: 200px;
-        margin: auto;
-        transform-style: preserve-3d;
-        backface-visibility: hidden;
         display: flex;
-        box-shadow: 0 0 5px rgba(0,0,0,.1);
         position: relative;
         flex-wrap: wrap;
-        border: 1px solid red;
+        width: 400px;
+        height: 200px;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.65);
+        justify-content: center;
+        border-radius: 5px;
+        margin: auto;
+        pointer-events: none;
+        transform: translateZ(0);
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        box-shadow: 0 0 60px 1px rgba(0, 0, 0, 0.1);
+        border: none;
           
-        &:after {
-            content:" ";
-            position: absolute;
-            width: 100%;
-            height: 10px;
-            border-radius: 50%;
-            left:0;
-            bottom:-50px;
-            box-shadow: 0 30px 20px rgba(0,0,0,.3);
-        }
+        // &:after {
+        //     content:" ";
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 10px;
+        //     border-radius: 50%;
+        //     left:0;
+        //     bottom:-50px;
+        //     box-shadow: 0 30px 20px rgba(0,0,0,.3);
+        // }
 
         h1 {
             width: 100%;
@@ -67,9 +70,17 @@ h1, h2, h3, h4 {color: #000;}
             font-family: $header-font-family;
             font-weight: $header-font-weight;
             font-size: 64px;
-            margin: 5% 0 6%;
-            padding-bottom: 10px;
+            letter-spacing: 5px;
+            margin: 5% 0 0;
             transform: translateZ(100px);
+        }
+
+        h3 {
+            text-transform: capitalize;
+            font-size: 16px;
+            padding-top: 5%;
+            border-top: 1px solid #DDD;
+            transform: translateZ(50px);
         }
     }
 }
