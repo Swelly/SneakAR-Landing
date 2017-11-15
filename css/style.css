@@ -81,7 +81,7 @@ h1, h2, h3, h4 {
 
 #brand-mark {
   position: fixed;
-  top: 5%;
+  bottom: 5%;
   right: 5%; }
   #brand-mark a {
     display: inline-block;
@@ -97,8 +97,8 @@ h1, h2, h3, h4 {
 
 #job-links {
   position: fixed;
-  bottom: 10%;
-  right: 47%;
+  top: 5%;
+  right: 5%;
   padding: 0.5% 1%;
   background: #000;
   border-radius: 4px;
@@ -130,7 +130,7 @@ h1, h2, h3, h4 {
   .modalDialog .modal-content {
     width: 80%;
     position: relative;
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 1.5% 2%;
     border-radius: 6px;
     background: #FFF; }
