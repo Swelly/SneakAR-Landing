@@ -1,5 +1,5 @@
 html {
-  font-family: "Dosis", sans-serif;
+  font-family: "gesta", sans-serif;
   font-size: 16px;
   font-weight: 400;
   position: relative;
@@ -11,7 +11,7 @@ input,
 textarea {
   color: #000;
   color: rgba(0, 0, 0, 0.9);
-  font-family: "Dosis", sans-serif;
+  font-family: "gesta", sans-serif;
   font-weight: 400;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -24,7 +24,7 @@ textarea {
 h1, h2, h3, h4 {
   color: #000; }
 
-#app {
+#card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,7 +35,7 @@ h1, h2, h3, h4 {
           perspective: 1000px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d; }
-  #app .intro-block {
+  #card .intro-block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -60,19 +60,20 @@ h1, h2, h3, h4 {
             backface-visibility: hidden;
     box-shadow: 0 0 60px 1px rgba(0, 0, 0, 0.1);
     border: none; }
-    #app .intro-block h1 {
+    #card .intro-block h1 {
       width: 100%;
       line-height: 1;
-      font-family: "Pragati Narrow", sans-serif;
+      font-family: "jaf-domus", sans-serif;
       font-weight: 700;
       font-size: 64px;
       letter-spacing: 5px;
       margin: 5% 0 0;
       -webkit-transform: translateZ(100px);
               transform: translateZ(100px); }
-    #app .intro-block h3 {
-      text-transform: capitalize;
+    #card .intro-block h3 {
+      font-family: "gesta", sans-serif;
       font-size: 16px;
+      text-transform: capitalize;
       padding-top: 5%;
       border-top: 1px solid #DDD;
       -webkit-transform: translateZ(50px);
@@ -93,6 +94,69 @@ h1, h2, h3, h4 {
       display: inline-block;
       vertical-align: middle;
       width: 20px; }
+
+#job-links {
+  position: fixed;
+  bottom: 10%;
+  right: 45%;
+  padding: 0.5% 1%;
+  background: #000;
+  border-radius: 4px;
+  box-shadow: 0 0 0 3px #fff; }
+  #job-links .container {
+    text-align: center; }
+    #job-links .container .btn-reveal {
+      text-decoration: none;
+      color: #FFF;
+      font-weight: 700;
+      font-size: 16px; }
+
+.modalDialog {
+  position: fixed;
+  font-family: "gesta", sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  overflow: scroll; }
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto; }
+  .modalDialog .modal-content {
+    width: 80%;
+    position: relative;
+    margin: 10% auto;
+    padding: 1.5% 2%;
+    border-radius: 6px;
+    background: #FFF; }
+    .modalDialog .modal-content h3 {
+      margin-bottom: 0; }
+    .modalDialog .modal-content p {
+      margin-top: 0; }
+    .modalDialog .modal-content ul {
+      margin-top: 0; }
+    .modalDialog .modal-content a {
+      text-decoration: none;
+      padding: 3px 6px;
+      margin-left: 3px;
+      background: #000;
+      color: #ffffff;
+      border-radius: 5px; }
+  .modalDialog .close {
+    color: #000;
+    font-size: 20px;
+    position: absolute;
+    right: 2.25%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700; }
+    .modalDialog .close:hover {
+      color: #c8ff3a; }
 
 * {
   box-sizing: border-box; }

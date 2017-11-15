@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 	function setHeight() {
 		let windowHeight = $(window).innerHeight();
-		$('#app').css('min-height', windowHeight);
+		$('#card').css('min-height', windowHeight);
 	};
 
 	setHeight();
@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 
 	$(document).on("mousemove",function(e) {
-		let card = $("#app");
+		let card = $("#card");
 		let ax = -($(window).innerWidth()/2- e.pageX) / 20;
 		let ay = ($(window).innerHeight()/2- e.pageY) / 10;
 
